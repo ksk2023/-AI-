@@ -1,0 +1,13 @@
+# Core
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Storage
+pyarrow>=12.0.0
+
+# Progress/logging for long data pulls
+tqdm>=4.65.0
