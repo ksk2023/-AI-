@@ -1,0 +1,10 @@
+{
+  "data_source": "Yahoo Finance QQQ (Invesco QQQ Trust, NASDAQ-100 ETF), adj_close",
+  "period": "1999-03-11 -> 2026-06-29",
+  "total_trading_days": 6867,
+  "full_period_mdd_pct": -82.96,
+  "daily_vol_annualized_pct": 22.53,
+  "var_95_daily_pct": -2.54,
+  "var_99_daily_pct": -4.04,
+  "extreme_events_count": 1
+}
