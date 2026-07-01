@@ -6,40 +6,54 @@
 
 ## 项目背景
 
-逐步搭建一个基于历史回测的量化交易系统。第一步先收集可靠的数据源,第二步对具体假设做统计验证。本仓库目前已完成两个核心研究:
-
-1. **大涨后追高收益研究**(2026-06-30):日涨超 10% 后,各周期继续涨概率。
-2. **阴阳平衡假设验证**(2026-06-30):纳斯达克综合指数年内的涨/跌天数是否接近 1:1。
-
-后续每完成一个新研究,会按照命名规范推送到 [GitHub](https://github.com/ksk2023/-AI-)。
+逐步搭建一个基于历史回测的量化交易系统。第一步收集可靠的数据源,第二步对具体假设做统计验证,第三步对个股做系统性历史回测。所有研究按日期+主题命名,推送至 [GitHub](https://github.com/ksk2023/-AI-),不覆盖历史报告。
 
 ## 数据源
 
 | 数据源 | 用途 | 限制 | 验证状态 |
 |---|---|---|---|
+| **Yahoo Finance** | 复权日线(美股/韩股/台股/ADR),个股与指数 | 非官方接口,但数据准确 | ✅ 主力数据源,覆盖 1998-2026 |
 | **Finnhub** | 行业/市值/IPO 分类,实时报价 | 历史 K 线为付费 | ✅ 完整 40 位 key 验证有效 |
-| **Alpha Vantage** | 复权周线(WEEKLY_ADJUSTED),全市场名录 | 每日 25 次调用上限 | ✅ 已验证,2020 年起数据 |
-| **Yahoo Finance** | 复权日线(cookie+crumb 绕过限流) | 非官方,但数据准确 | ✅ 已验证 26 年历史 |
+| **Alpha Vantage** | 复权周线(WEEKLY_ADJUSTED),全市场名录 | 每日 25 次调用上限 | ✅ 已验证 |
 
 价格数据全部使用**复权收盘价**(已处理拆股与分红),避免假信号。
 
+> 已知数据质量坑(均已处理):SK海力士的 Yahoo adj_close 出现负值(复权算法 bug),已回退为原始 close;闪迪 SNDK 因 2016 被收购、2025 重新分拆存在 9 年数据断层,仅分析 2025 后;`SND` 实为 Smart Sand 而非闪迪,已剔除。
+
 ## 已完成研究
 
-### 1. 美股大涨后追高收益研究(2026-06-30)
+### 横向主题研究
 
-- 报告: [docs/research/2026-06-30_美股大涨后追高收益研究_日线回测.md](docs/research/2026-06-30_美股大涨后追高收益研究_日线回测.md)
-- 数据: 65 个标的,436,993 根日线,1999-2026
-- 事件: 1549 次日涨幅 ≥ 10% 的大涨事件
-- 分类: 25 个细分行业 + 市值类型 + 16 只 ETF
+| # | 主题 | 日期 | 报告 |
+|---|---|---|---|
+| 1 | 大涨后追高收益研究(日线回测) | 2026-06-30 | [报告](docs/research/2026-06-30_美股大涨后追高收益研究_日线回测.md) |
+| 2 | 美股阴阳平衡假设验证(纳斯达克综合指数) | 2026-06-30 | [报告](docs/research/2026-06-30_美股阴阳平衡假设验证_纳斯达克综合指数.md) |
+| 3 | 杠杆压力测试与风控回测(NASDAQ) | 2026-06-30 | [报告](docs/research/2026-06-30_杠杆压力测试与风控回测_NASDAQ.md) |
+| 4 | QQQ 杠杆与回撤爆仓分析(27年真实日线) | 2026-07-01 | [报告](docs/research/2026-07-01_QQQ杠杆与回撤爆仓分析.md) |
+| 5 | 科技股组合历史回测横向对比(17家) | 2026-07-01 | [报告](docs/research/2026-07-01_科技股组合历史回测横向对比.md) |
 
-**核心发现**:**股票日大涨(超 10%)后,第二天继续涨的概率仅 39.4%**。短期(1-2 周)追高全面亏损,中长期(半年+)才有正收益。一年胜率 60.5%,中位数收益 +13.4%。
+**核心发现摘要**:
 
-### 2. 美股阴阳平衡假设验证(2026-06-30)
+- **追高**:股票日大涨(超 10%)后第二天继续涨概率仅 39.4%;短期(1-2 周)追高全面亏损,一年胜率 60.5%。
+- **阴阳平衡**:假设不成立。纳斯达克累计涨/跌约 1.27:1,美股结构是"涨多跌少"而非"涨跌平衡"。
+- **QQQ 杠杆**:全期 MDD -82.96%,恢复用 16.5 年;1.5x 以上任何维持保证金在真实历史中必爆仓;理论临界杠杆 1.21x。
+- **科技股共性**:高 CAGR 必然伴随 40%+ 波动率;存储半导体(美光/康宁/海力士)是"周期地狱",回撤深至 -98%;稳定赢家涨天占比 52-53%。
 
-- 报告: [docs/research/2026-06-30_美股阴阳平衡假设验证_纳斯达克综合指数.md](docs/research/2026-06-30_美股阴阳平衡假设验证_纳斯达克综合指数.md)
-- 数据: 纳斯达克综合指数(^IXIC),1971-2026,共 56 年 13,964 个交易日
+### 个股历史回测(17 家)
 
-**核心结论:假设不成立。**累计涨/跌比例约 1.27:1(涨 7,787 / 跌 6,139),50/56 年严重偏离 1:1。仅 2001 年最接近 1:1(50.4% vs 49.6%)。美股作为长期向上的资产,结构是"涨多跌少"而非"涨跌平衡"。
+每家独立文件夹,位于 [docs/research/个股分析/](docs/research/个股分析/):
+
+| 板块 | 公司 | 代码 | 文件夹 |
+|---|---|---|---|
+| 美股七姐妹 | 苹果 / 微软 / 英伟达 / 谷歌 / Meta / 亚马逊 / 特斯拉 | AAPL MSFT NVDA GOOGL META AMZN TSLA | [个股分析/](docs/research/个股分析/) |
+| 存储半导体 | 美光 / 闪迪 / SK海力士 / 三星电子 | MU SNDK 000660.KS 005930.KS | 同上 |
+| 晶圆代工 | 台积电(ADR + 台湾本股) | TSM 2330.TW | 同上 |
+| 通信/网络 | 诺基亚 / 迈威尔 / 康宁 | NOK MRVL GLW | 同上 |
+| 航天 | SpaceX | SPCX | [SPCX/](docs/research/个股分析/SPCX/) |
+
+每份个股报告包含:总收益/CAGR/波动率/夏普/Sortino、最大回撤及恢复时长、阴阳平衡(涨跌天数)、月度季节性、逐年收益、滚动252日窗口、与 SPY/QQQ/纳指相关性、杠杆爆仓敏感度。结构化指标同步保存为 `_metrics.json`。
+
+> **SpaceX 说明**:`SPCX` 于 2026-06-12 在纳斯达克 IPO,截至回测仅 12 个交易日,长期指标无统计意义,仅作 IPO 初期观察。详见 [SPCX IPO 与数据局限说明](docs/research/个股分析/SPCX/2026-07-01_SPCX_IPO与数据局限说明.md)。
 
 ## 目录结构
 
@@ -52,31 +66,33 @@
 ├── .gitignore                          # .env、缓存等永不提交
 ├── src/                                # 可复现的代码
 │   ├── config.py                       # 环境变量加载(.env → 内存)
-│   ├── universe.py                     # 股票池定义(53 只 + 16 只 ETF)
+│   ├── universe.py                     # 基础股票池定义
 │   ├── data_fetch.py                   # Finnhub/AV 数据拉取
-│   ├── yahoo_daily.py                  # Yahoo 日线拉取(cookie+crumb)
-│   ├── analysis.py                     # 周线大涨事件分析引擎
-│   ├── analysis_daily.py               # 日线大涨事件分析引擎
+│   ├── yahoo_daily.py                  # Yahoo 日线拉取(cookie+crumb 认证)
+│   ├── fetch_tech_batch.py             # 科技股批量抓取(含韩股/台股)
+│   ├── analysis.py / analysis_daily.py # 大涨事件分析引擎(周/日线)
 │   ├── yin_yang_analysis.py            # 阴阳平衡逐年分析
-│   └── report.py                       # 报告生成器
+│   ├── leverage_stress.py              # NASDAQ 杠杆压力测试
+│   ├── qqq_leverage_stress.py          # QQQ 杠杆与爆仓分析
+│   ├── stock_analysis.py               # 通用单股回测分析引擎
+│   ├── gen_tech_reports.py             # 个股报告生成器
+│   ├── gen_comparison_report.py        # 科技股横向对比报告生成器
+│   └── report.py                       # 早期报告生成器
 ├── data/
 │   ├── raw/                            # 原始数据(parquet)
-│   │   ├── daily_AAPL.parquet          # 65 个标的的日线
-│   │   ├── daily_NASDAQ_COMPOSITE.parquet  # 纳斯达克综合指数完整历史
-│   │   ├── weekly_*.parquet            # 12 只标的的周线
-│   │   ├── profiles.parquet            # 53 只个股的行业/市值分类
-│   │   └── listing_status.csv          # AV 全市场名录(9596 个标的)
-│   └── processed/                      # 处理后的分析结果(CSV/parquet)
-│       ├── daily_by_period.csv         # 日线 6 周期统计
-│       ├── daily_by_sector.csv         # 日线行业分类
-│       ├── daily_by_cap.csv            # 日线市值分类
-│       ├── daily_events.parquet        # 1549 次大涨事件明细
-│       ├── nasdaq_yin_yang_balance.csv # 56 年逐年涨跌统计
-│       └── ...
+│   │   ├── daily_*.parquet             # 各标的日线(美股/韩股/台股/指数/ETF)
+│   │   └── ...
+│   └── processed/                      # 处理后的分析结果(CSV/parquet/json)
 └── docs/
-    └── research/                       # 研究报告(命名:YYYY-MM-DD_主题.md)
-        ├── 2026-06-30_美股大涨后追高收益研究_日线回测.md
-        └── 2026-06-30_美股阴阳平衡假设验证_纳斯达克综合指数.md
+    └── research/                       # 研究报告
+        ├── 2026-06-30_*.md             # 主题报告(按日期+主题命名)
+        ├── 2026-07-01_*.md
+        └── 个股分析/                   # 个股回测(每股一文件夹)
+            ├── AAPL/
+            │   ├── 2026-07-01_AAPL_历史回测分析.md
+            │   └── 2026-07-01_AAPL_metrics.json
+            ├── NVDA/  TSLA/  ...        # 其余个股同构
+            └── SPCX/                   # SpaceX(含 IPO 数据局限说明)
 ```
 
 ## 快速开始
@@ -98,44 +114,41 @@ ALPHA_VANTAGE_API_KEY=你的 Alpha Vantage key
 
 > `.env` 已在 `.gitignore` 中,**绝不会**被提交。
 
-### 3. 拉取数据(可选,数据已落盘)
+### 3. 拉取数据
 
 ```bash
-# Finnhub 行业分类
-python src/data_fetch.py --profiles
+# 科技股批量日线(美股/韩股/台股,含七姐妹、存储、代工、SpaceX)
+python src/fetch_tech_batch.py
 
-# Alpha Vantage 复权周线(每日 25 次上限,需要分多天)
-python src/data_fetch.py --weekly
-
-# Yahoo Finance 复权日线
+# 基础股票池日线
 python src/yahoo_daily.py
+
+# Finnhub 行业分类 / AV 复权周线
+python src/data_fetch.py --profiles
+python src/data_fetch.py --weekly
 ```
 
-### 4. 跑分析
+### 4. 跑分析与生成报告
 
 ```bash
-# 大涨后追高(日线)
+# 个股回测(17 家,输出到 docs/research/个股分析/<TICKER>/)
+python src/gen_tech_reports.py
+
+# 科技股横向对比
+python src/gen_comparison_report.py
+
+# 早期研究:大涨追高 / 阴阳平衡 / NASDAQ杠杆
 python src/analysis_daily.py
-
-# 大涨后追高(周线,12 只股票)
-python src/analysis.py
-
-# 阴阳平衡逐年分析
 python src/yin_yang_analysis.py
-```
-
-### 5. 生成报告
-
-```bash
-python src/report.py
+python src/qqq_leverage_stress.py
 ```
 
 ## 命名与推送规范
 
-**研究报告命名**:`docs/research/YYYY-MM-DD_研究主题.md`
+**研究报告命名**:`docs/research/YYYY-MM-DD_研究主题.md`(主题报告)或 `docs/research/个股分析/<TICKER>/YYYY-MM-DD_<TICKER>_历史回测分析.md`(个股报告)。
 
-- 日期精确到日
-- 同一主题不覆盖,按日期排序自然形成时间线
+- 日期精确到日,同一主题不覆盖,按日期自然形成时间线
+- 个股报告每股一文件夹,新增股票只需在 `src/gen_tech_reports.py` 的 `STOCKS` 列表追加一行
 - 主题使用中文,简短描述研究内容
 
 **Git 推送流程**:
@@ -147,23 +160,24 @@ git commit -m "..."
 git push origin main
 ```
 
-每次完成研究都按此流程推送,不会覆盖之前的文件。
-
 ## 数据局限与已知偏差
 
 | 局限 | 影响 | 缓解方案 |
 |---|---|---|
-| **幸存者偏差** | 当前样本仅含现存股票,AV 名录显示约 32% 美股已退市,追高收益可能被系统性高估 | 接入 Polygon 全市场(含退市股)历史 |
-| **数据源免费层限制** | Finnhub 无历史 K 线,AV 每日 25 次,DAILY_ADJUSTED 为付费 | 用 Yahoo Finance 日线兜底(已实测可用) |
-| **事件定义单一** | 大涨定义为收盘对收盘 ≥10%,未区分财报跳空、行业联动等 | 后续按触发原因细化条件概率 |
+| **幸存者偏差** | 样本仅含现存股票,追高收益可能被系统性高估 | 接入 Polygon 全市场(含退市股)历史 |
+| **数据断层** | 闪迪 2016-2025 被收购期间无独立行情;SpaceX 仅 12 天 | 如实标注,不做跨实体拼接或外推 |
+| **Yahoo 韩股复权 bug** | SK海力士 adj_close 出现负值 | 已回退为原始 close 并标注 |
 | **回测未含交易成本** | 实际收益会低于报告数值 | 后续接入滑点与佣金模型 |
+| **单一数据源** | 全部依赖 Yahoo 非官方接口 | 关键结论交叉验证多源 |
 
-## 后续研究方向
+## 新增个股分析
 
-1. 接入 Polygon.io 全市场数据,消除幸存者偏差。
-2. 把"大涨"细分到财报跳空 / 行业联动 / 指数成分变动等触发原因,做条件概率分析。
-3. 引入更多时间序列因子(成交量、波动率、估值),做多因子回归。
-4. 搭建完整的事件驱动回测引擎与组合优化框架。
+如需分析新股票:
+
+1. 在 `src/fetch_tech_batch.py` 的 `TARGETS` 列表追加 `(代码, 中文名, 市场)`,运行抓取。
+2. 在 `src/gen_tech_reports.py` 的 `STOCKS` 列表追加 `(代码, 中文名, 市场, 行业)`,运行生成。
+3. 运行 `src/gen_comparison_report.py` 更新横向对比。
+4. 报告自动写入 `docs/research/个股分析/<代码>/`,不覆盖历史。
 
 ## 联系方式与许可
 

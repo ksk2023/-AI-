@@ -21,6 +21,10 @@ import stock_analysis as sa  # noqa: E402
 
 RESEARCH = REPO / "docs" / "research"
 RESEARCH.mkdir(parents=True, exist_ok=True)
+# Per-ticker reports live in a dedicated subfolder so the top-level
+# docs/research/ stays clean for thematic reports.
+STOCK_DIR = RESEARCH / "个股分析"
+STOCK_DIR.mkdir(parents=True, exist_ok=True)
 
 REPORT_DATE = "2026-07-01"
 
@@ -229,7 +233,7 @@ def main():
         try:
             print("analyzing", sym, "...")
             r = sa.analyze(sym, name, market, sector)
-            d = RESEARCH / safe_dir_name(sym)
+            d = STOCK_DIR / safe_dir_name(sym)
             d.mkdir(parents=True, exist_ok=True)
             json_name = "{}_{}_metrics.json".format(REPORT_DATE, sym)
             md_name = "{}_{}_历史回测分析.md".format(REPORT_DATE, sym)

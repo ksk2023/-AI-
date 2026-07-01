@@ -8,11 +8,12 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 RESEARCH = REPO / "docs" / "research"
+STOCK_DIR = RESEARCH / "个股分析"
 DATE = "2026-07-01"
 
-# load all metrics
+# load all per-ticker metrics from the 个股分析 subfolder
 records = []
-for f in sorted(glob.glob(str(RESEARCH / "*" / "{}_*_metrics.json".format(DATE)))):
+for f in sorted(glob.glob(str(STOCK_DIR / "*" / "{}_*_metrics.json".format(DATE)))):
     r = json.loads(Path(f).read_text(encoding="utf-8"))
     records.append(r)
 
