@@ -13,7 +13,7 @@ Targets (Yahoo symbols):
   海力士:      000660.KS
   三星:        005930.KS
   诺基亚:      NOK
-  SpaceX:      PRIVATE - no public market data, skipped
+  SpaceX:      SPCX (IPO 2026-06-12 on Nasdaq; short history)
 
 Uses the existing cookie+crumb YahooFetcher (src/yahoo_daily.py).
 """

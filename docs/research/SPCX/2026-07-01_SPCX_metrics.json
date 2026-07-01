@@ -1,0 +1,92 @@
+{
+  "symbol": "SPCX",
+  "display_name": "SpaceX(太空探索技术)",
+  "market": "US 纳斯达克",
+  "sector": "航天/卫星(Starlink)",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "2026-06-12",
+  "period_end": "2026-06-30",
+  "trading_days": 12,
+  "span_years": 0.05,
+  "trading_days_per_year": 243.5,
+  "start_price": 160.95,
+  "end_price": 170.86,
+  "total_return_pct": 6.16,
+  "cagr_pct": 236.17,
+  "annualized_vol_pct": 148.82,
+  "sharpe": 1.574,
+  "sortino": 2.268,
+  "max_drawdown": {
+    "mdd_pct": -27.62,
+    "peak_date": "2026-06-16",
+    "trough_date": "2026-06-25",
+    "peak_idx": 2,
+    "trough_idx": 8,
+    "recovery_idx": null,
+    "recovery_date": null,
+    "recovery_days": null,
+    "recovered": false
+  },
+  "win_loss": {
+    "up_days": 6,
+    "down_days": 5,
+    "flat_days": 0,
+    "up_ratio_pct": 54.55,
+    "best_day_pct": 19.6,
+    "worst_day_pct": -16.43
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "6": {
+        "avg_pct": 6.16,
+        "pos_years": 1,
+        "total_years": 1
+      }
+    },
+    "best_month": {
+      "month": 6,
+      "avg_pct": 6.16,
+      "pos_years": 1,
+      "total_years": 1
+    },
+    "worst_month": {
+      "month": 6,
+      "avg_pct": 6.16,
+      "pos_years": 1,
+      "total_years": 1
+    }
+  },
+  "annual_returns": {
+    "2026": 6.16
+  },
+  "rolling_252d": {},
+  "correlation": {
+    "SPY": null,
+    "QQQ": null,
+    "NASDAQ_COMPOSITE": null
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 27.6,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 41.4,
+      "survives": true
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 55.2,
+      "survives": true
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 82.9,
+      "survives": true
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 138.1,
+      "survives": false
+    },
+    "critical_leverage": 3.62
+  }
+}

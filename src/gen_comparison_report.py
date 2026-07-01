@@ -33,7 +33,7 @@ def main():
     a("# 科技股组合历史回测横向对比报告（{}）\n\n".format(DATE))
     a("> 本报告汇总 16 家科技/半导体公司的历史回测指标，数据均来自 Yahoo Finance 复权日线，\n")
     a("> 可由各 `docs/research/<TICKER>/<DATE>_<TICKER>_metrics.json` 与 `src/stock_analysis.py` 复现。\n")
-    a("> SpaceX 因仍为私有公司无公开行情，单独出具数据不可得说明，不参与本对比。\n\n")
+    a("> SpaceX（SPCX）于 2026-06-12 IPO，样本仅 12 个交易日，单独列入「样本不足」组，不参与长期排名。\n\n")
     a("---\n\n")
 
     # ---- Section 1: master comparison table ----
@@ -167,7 +167,7 @@ def main():
     a("- 韩国股票（SK海力士）的 Yahoo adj_close 存在负值（已知Yahoo bug），已回退为原始 close 序列并标注。\n")
     a("- 闪迪（SNDK）因 2016 被西部数据收购、2025 重新分拆，数据存在 9 年断层，仅分析 2025-02 至今。\n")
     a("- 诺基亚 ADR 价格反映美股交易，与赫尔辛基本股可能有汇率差异。\n")
-    a("- SpaceX 仍为私有公司，无公开行情，不参与本对比，单独出具说明文档。\n\n")
+    a("- SpaceX（SPCX）2026-06-12 IPO，样本仅 12 个交易日，长期指标（CAGR/夏普/季节性）无统计意义，仅作 IPO 初期观察。\n\n")
 
     a("## 附录：可复现性\n\n")
     a("- 逐股报告：`docs/research/<TICKER>/<DATE>_<TICKER>_历史回测分析.md`\n")

@@ -41,6 +41,7 @@ STOCKS = [
     ("000660_KS", "SK海力士",      "韩国 KOSPI",    "半导体-存储DRAM/HBM"),
     ("005930_KS", "三星电子",      "韩国 KOSPI",    "半导体-存储+消费电子"),
     ("NOK",       "诺基亚",        "US 纽交所ADR",  "通信设备/网络"),
+    ("SPCX",      "SpaceX(太空探索技术)", "US 纳斯达克", "航天/卫星(Starlink)"),
 ]
 
 # 2330.TW exists too but user asked for TSMC via TSM ADR primarily; keep ADR.
