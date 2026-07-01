@@ -1,0 +1,195 @@
+{
+  "symbol": "GLW",
+  "display_name": "康宁(Corning)",
+  "market": "US 纽交所",
+  "sector": "特种材料-玻璃/光纤",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "1998-12-31",
+  "period_end": "2026-06-30",
+  "trading_days": 6915,
+  "span_years": 27.49,
+  "trading_days_per_year": 251.5,
+  "start_price": 9.6491,
+  "end_price": 255.43,
+  "total_return_pct": 2547.19,
+  "cagr_pct": 12.65,
+  "annualized_vol_pct": 47.1,
+  "sharpe": 0.226,
+  "sortino": 0.303,
+  "max_drawdown": {
+    "mdd_pct": -99.02,
+    "peak_date": "2000-09-01",
+    "trough_date": "2002-10-08",
+    "peak_idx": 422,
+    "trough_idx": 946,
+    "recovery_idx": 6713,
+    "recovery_date": "2025-09-10",
+    "recovery_days": 9140,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 3508,
+    "down_days": 3321,
+    "flat_days": 85,
+    "up_ratio_pct": 50.74,
+    "best_day_pct": 21.64,
+    "worst_day_pct": -35.22
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 6.26,
+        "pos_years": 19,
+        "total_years": 28
+      },
+      "2": {
+        "avg_pct": 1.83,
+        "pos_years": 16,
+        "total_years": 28
+      },
+      "3": {
+        "avg_pct": 2.16,
+        "pos_years": 16,
+        "total_years": 28
+      },
+      "4": {
+        "avg_pct": 1.47,
+        "pos_years": 16,
+        "total_years": 28
+      },
+      "5": {
+        "avg_pct": 1.38,
+        "pos_years": 17,
+        "total_years": 28
+      },
+      "6": {
+        "avg_pct": 3.09,
+        "pos_years": 16,
+        "total_years": 28
+      },
+      "7": {
+        "avg_pct": -1.17,
+        "pos_years": 12,
+        "total_years": 27
+      },
+      "8": {
+        "avg_pct": 0.39,
+        "pos_years": 13,
+        "total_years": 27
+      },
+      "9": {
+        "avg_pct": -0.72,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "10": {
+        "avg_pct": 0.4,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "11": {
+        "avg_pct": 7.95,
+        "pos_years": 21,
+        "total_years": 27
+      },
+      "12": {
+        "avg_pct": -0.01,
+        "pos_years": 12,
+        "total_years": 28
+      }
+    },
+    "best_month": {
+      "month": 11,
+      "avg_pct": 7.95,
+      "pos_years": 21,
+      "total_years": 27
+    },
+    "worst_month": {
+      "month": 7,
+      "avg_pct": -1.17,
+      "pos_years": 12,
+      "total_years": 27
+    }
+  },
+  "annual_returns": {
+    "1998": 0.0,
+    "1999": 189.75,
+    "2000": 23.27,
+    "2001": -83.02,
+    "2002": -62.89,
+    "2003": 215.11,
+    "2004": 12.85,
+    "2005": 67.03,
+    "2006": -4.83,
+    "2007": 28.79,
+    "2008": -59.81,
+    "2009": 105.57,
+    "2010": 1.23,
+    "2011": -31.92,
+    "2012": -0.23,
+    "2013": 45.03,
+    "2014": 31.21,
+    "2015": -18.32,
+    "2016": 36.23,
+    "2017": 34.63,
+    "2018": -3.28,
+    "2019": -1.02,
+    "2020": 27.57,
+    "2021": 5.92,
+    "2022": -11.56,
+    "2023": -1.23,
+    "2024": 60.64,
+    "2025": 87.76,
+    "2026": 192.71
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 864.54,
+    "worst_rolling_pct": -92.7,
+    "pct_negative": 38.36
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.545,
+      "beta": NaN,
+      "overlap_days": 6662
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.578,
+      "beta": NaN,
+      "overlap_days": 6868
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.59,
+      "beta": 1.115,
+      "overlap_days": 6914
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 99.0,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 148.5,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 198.0,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 297.1,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 495.1,
+      "survives": false
+    },
+    "critical_leverage": 1.01
+  }
+}

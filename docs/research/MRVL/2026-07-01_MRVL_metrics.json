@@ -1,0 +1,193 @@
+{
+  "symbol": "MRVL",
+  "display_name": "迈威尔(Marvell)",
+  "market": "US 纳斯达克",
+  "sector": "半导体-网络/定制ASIC",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "2000-06-30",
+  "period_end": "2026-06-30",
+  "trading_days": 6537,
+  "span_years": 26.0,
+  "trading_days_per_year": 251.4,
+  "start_price": 12.1323,
+  "end_price": 297.89,
+  "total_return_pct": 2355.35,
+  "cagr_pct": 13.1,
+  "annualized_vol_pct": 56.43,
+  "sharpe": 0.197,
+  "sortino": 0.284,
+  "max_drawdown": {
+    "mdd_pct": -91.59,
+    "peak_date": "2000-09-13",
+    "trough_date": "2001-04-04",
+    "peak_idx": 51,
+    "trough_idx": 191,
+    "recovery_idx": 1348,
+    "recovery_date": "2005-11-10",
+    "recovery_days": 1884,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 3277,
+    "down_days": 3201,
+    "flat_days": 58,
+    "up_ratio_pct": 50.14,
+    "best_day_pct": 32.52,
+    "worst_day_pct": -32.08
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 6.79,
+        "pos_years": 18,
+        "total_years": 26
+      },
+      "2": {
+        "avg_pct": -1.05,
+        "pos_years": 16,
+        "total_years": 26
+      },
+      "3": {
+        "avg_pct": -0.55,
+        "pos_years": 13,
+        "total_years": 26
+      },
+      "4": {
+        "avg_pct": 6.26,
+        "pos_years": 11,
+        "total_years": 26
+      },
+      "5": {
+        "avg_pct": 7.31,
+        "pos_years": 17,
+        "total_years": 26
+      },
+      "6": {
+        "avg_pct": 1.26,
+        "pos_years": 14,
+        "total_years": 27
+      },
+      "7": {
+        "avg_pct": 1.56,
+        "pos_years": 13,
+        "total_years": 26
+      },
+      "8": {
+        "avg_pct": 0.68,
+        "pos_years": 12,
+        "total_years": 26
+      },
+      "9": {
+        "avg_pct": -2.56,
+        "pos_years": 10,
+        "total_years": 26
+      },
+      "10": {
+        "avg_pct": 0.7,
+        "pos_years": 12,
+        "total_years": 26
+      },
+      "11": {
+        "avg_pct": 7.16,
+        "pos_years": 20,
+        "total_years": 26
+      },
+      "12": {
+        "avg_pct": 0.95,
+        "pos_years": 14,
+        "total_years": 26
+      }
+    },
+    "best_month": {
+      "month": 5,
+      "avg_pct": 7.31,
+      "pos_years": 17,
+      "total_years": 26
+    },
+    "worst_month": {
+      "month": 9,
+      "avg_pct": -2.56,
+      "pos_years": 10,
+      "total_years": 26
+    }
+  },
+  "annual_returns": {
+    "2000": -61.51,
+    "2001": 63.28,
+    "2002": -47.35,
+    "2003": 101.11,
+    "2004": 87.03,
+    "2005": 58.13,
+    "2006": -31.57,
+    "2007": -27.15,
+    "2008": -52.29,
+    "2009": 211.09,
+    "2010": -10.6,
+    "2011": -25.34,
+    "2012": -46.64,
+    "2013": 102.13,
+    "2014": 2.48,
+    "2015": -37.83,
+    "2016": 60.54,
+    "2017": 56.89,
+    "2018": -23.62,
+    "2019": 65.74,
+    "2020": 80.25,
+    "2021": 84.62,
+    "2022": -57.48,
+    "2023": 63.68,
+    "2024": 83.79,
+    "2025": -22.82,
+    "2026": 250.97
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 408.8,
+    "worst_rolling_pct": -86.01,
+    "pct_negative": 41.1
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.503,
+      "beta": 1.483,
+      "overlap_days": 6536
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.585,
+      "beta": 1.286,
+      "overlap_days": 6536
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.594,
+      "beta": 1.393,
+      "overlap_days": 6536
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 91.6,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 137.4,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 183.2,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 274.8,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 458.0,
+      "survives": false
+    },
+    "critical_leverage": 1.09
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "symbol": "NOK",
+  "display_name": "诺基亚",
+  "market": "US 纽交所ADR",
+  "sector": "通信设备/网络",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "1998-12-31",
+  "period_end": "2026-06-30",
+  "trading_days": 6915,
+  "span_years": 27.49,
+  "trading_days_per_year": 251.5,
+  "start_price": 7.2559,
+  "end_price": 13.28,
+  "total_return_pct": 83.02,
+  "cagr_pct": 2.22,
+  "annualized_vol_pct": 46.18,
+  "sharpe": 0.005,
+  "sortino": 0.007,
+  "max_drawdown": {
+    "mdd_pct": -96.01,
+    "peak_date": "2000-06-19",
+    "trough_date": "2012-07-17",
+    "peak_idx": 369,
+    "trough_idx": 3407,
+    "recovery_idx": null,
+    "recovery_date": null,
+    "recovery_days": null,
+    "recovered": false
+  },
+  "win_loss": {
+    "up_days": 3401,
+    "down_days": 3293,
+    "flat_days": 220,
+    "up_ratio_pct": 49.19,
+    "best_day_pct": 38.48,
+    "worst_day_pct": -28.4
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 0.75,
+        "pos_years": 15,
+        "total_years": 28
+      },
+      "2": {
+        "avg_pct": -2.42,
+        "pos_years": 11,
+        "total_years": 28
+      },
+      "3": {
+        "avg_pct": 2.31,
+        "pos_years": 17,
+        "total_years": 28
+      },
+      "4": {
+        "avg_pct": 2.67,
+        "pos_years": 16,
+        "total_years": 28
+      },
+      "5": {
+        "avg_pct": 0.17,
+        "pos_years": 14,
+        "total_years": 28
+      },
+      "6": {
+        "avg_pct": -2.55,
+        "pos_years": 9,
+        "total_years": 28
+      },
+      "7": {
+        "avg_pct": -0.15,
+        "pos_years": 14,
+        "total_years": 27
+      },
+      "8": {
+        "avg_pct": 0.85,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "9": {
+        "avg_pct": 1.43,
+        "pos_years": 13,
+        "total_years": 27
+      },
+      "10": {
+        "avg_pct": 3.88,
+        "pos_years": 18,
+        "total_years": 27
+      },
+      "11": {
+        "avg_pct": 2.27,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "12": {
+        "avg_pct": 2.45,
+        "pos_years": 15,
+        "total_years": 28
+      }
+    },
+    "best_month": {
+      "month": 10,
+      "avg_pct": 3.88,
+      "pos_years": 18,
+      "total_years": 27
+    },
+    "worst_month": {
+      "month": 6,
+      "avg_pct": -2.55,
+      "pos_years": 9,
+      "total_years": 28
+    }
+  },
+  "annual_returns": {
+    "1998": 0.0,
+    "1999": 219.53,
+    "2000": -8.61,
+    "2001": -43.03,
+    "2002": -36.1,
+    "2003": 11.98,
+    "2004": -6.15,
+    "2005": 20.1,
+    "2006": 13.47,
+    "2007": 93.18,
+    "2008": -58.19,
+    "2009": -14.47,
+    "2010": -16.04,
+    "2011": -50.24,
+    "2012": -11.74,
+    "2013": 105.32,
+    "2014": 3.25,
+    "2015": -8.46,
+    "2016": -27.63,
+    "2017": -0.35,
+    "2018": 30.03,
+    "2019": -34.91,
+    "2020": 5.39,
+    "2021": 59.08,
+    "2022": -24.44,
+    "2023": -23.95,
+    "2024": 34.31,
+    "2025": 50.04,
+    "2026": 105.26
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 226.4,
+    "worst_rolling_pct": -75.03,
+    "pct_negative": 52.74
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.517,
+      "beta": NaN,
+      "overlap_days": 6662
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.53,
+      "beta": NaN,
+      "overlap_days": 6868
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.539,
+      "beta": 0.999,
+      "overlap_days": 6914
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 96.0,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 144.0,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 192.0,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 288.0,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 480.1,
+      "survives": false
+    },
+    "critical_leverage": 1.04
+  }
+}

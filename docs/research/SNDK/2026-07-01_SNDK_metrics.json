@@ -1,0 +1,168 @@
+{
+  "symbol": "SNDK",
+  "display_name": "闪迪(SanDisk)",
+  "market": "US 纳斯达克",
+  "sector": "半导体-存储NAND",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "2025-02-13",
+  "period_end": "2026-06-30",
+  "trading_days": 345,
+  "span_years": 1.37,
+  "trading_days_per_year": 251.5,
+  "start_price": 36.0,
+  "end_price": 2273.73,
+  "total_return_pct": 6215.92,
+  "cagr_pct": 1953.97,
+  "annualized_vol_pct": 102.09,
+  "sharpe": 19.12,
+  "sortino": 30.725,
+  "max_drawdown": {
+    "mdd_pct": -47.5,
+    "peak_date": "2025-03-18",
+    "trough_date": "2025-04-22",
+    "peak_idx": 22,
+    "trough_idx": 46,
+    "recovery_idx": 139,
+    "recovery_date": "2025-09-04",
+    "recovery_days": 170,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 196,
+    "down_days": 148,
+    "flat_days": 0,
+    "up_ratio_pct": 56.98,
+    "best_day_pct": 28.65,
+    "worst_day_pct": -21.3
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 142.75,
+        "pos_years": 1,
+        "total_years": 1
+      },
+      "2": {
+        "avg_pct": 20.2,
+        "pos_years": 2,
+        "total_years": 2
+      },
+      "3": {
+        "avg_pct": 0.81,
+        "pos_years": 1,
+        "total_years": 2
+      },
+      "4": {
+        "avg_pct": 20.02,
+        "pos_years": 1,
+        "total_years": 2
+      },
+      "5": {
+        "avg_pct": 35.98,
+        "pos_years": 2,
+        "total_years": 2
+      },
+      "6": {
+        "avg_pct": 27.23,
+        "pos_years": 2,
+        "total_years": 2
+      },
+      "7": {
+        "avg_pct": -5.36,
+        "pos_years": 0,
+        "total_years": 1
+      },
+      "8": {
+        "avg_pct": 22.25,
+        "pos_years": 1,
+        "total_years": 1
+      },
+      "9": {
+        "avg_pct": 113.84,
+        "pos_years": 1,
+        "total_years": 1
+      },
+      "10": {
+        "avg_pct": 77.66,
+        "pos_years": 1,
+        "total_years": 1
+      },
+      "11": {
+        "avg_pct": 12.02,
+        "pos_years": 1,
+        "total_years": 1
+      },
+      "12": {
+        "avg_pct": 6.31,
+        "pos_years": 1,
+        "total_years": 1
+      }
+    },
+    "best_month": {
+      "month": 1,
+      "avg_pct": 142.75,
+      "pos_years": 1,
+      "total_years": 1
+    },
+    "worst_month": {
+      "month": 7,
+      "avg_pct": -5.36,
+      "pos_years": 0,
+      "total_years": 1
+    }
+  },
+  "annual_returns": {
+    "2025": 559.39,
+    "2026": 857.84
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 5003.78,
+    "worst_rolling_pct": 982.64,
+    "pct_negative": 0.0
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.468,
+      "beta": 2.609,
+      "overlap_days": 344
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.512,
+      "beta": 2.254,
+      "overlap_days": 344
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.476,
+      "beta": 2.085,
+      "overlap_days": 344
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 47.5,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 71.2,
+      "survives": true
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 95.0,
+      "survives": true
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 142.5,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 237.5,
+      "survives": false
+    },
+    "critical_leverage": 2.11
+  }
+}

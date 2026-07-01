@@ -1,0 +1,194 @@
+{
+  "symbol": "MSFT",
+  "display_name": "微软",
+  "market": "US 纳斯达克",
+  "sector": "科技-软件/云",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "1999-12-31",
+  "period_end": "2026-06-29",
+  "trading_days": 6662,
+  "span_years": 26.49,
+  "trading_days_per_year": 251.5,
+  "start_price": 35.5006,
+  "end_price": 368.72,
+  "total_return_pct": 938.63,
+  "cagr_pct": 9.24,
+  "annualized_vol_pct": 30.05,
+  "sharpe": 0.241,
+  "sortino": 0.328,
+  "max_drawdown": {
+    "mdd_pct": -68.76,
+    "peak_date": "1999-12-31",
+    "trough_date": "2009-03-09",
+    "peak_idx": 0,
+    "trough_idx": 2308,
+    "recovery_idx": 3655,
+    "recovery_date": "2014-07-15",
+    "recovery_days": 5309,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 3396,
+    "down_days": 3200,
+    "flat_days": 65,
+    "up_ratio_pct": 50.98,
+    "best_day_pct": 19.57,
+    "worst_day_pct": -15.6
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 0.64,
+        "pos_years": 14,
+        "total_years": 27
+      },
+      "2": {
+        "avg_pct": -2.14,
+        "pos_years": 10,
+        "total_years": 27
+      },
+      "3": {
+        "avg_pct": 1.84,
+        "pos_years": 17,
+        "total_years": 27
+      },
+      "4": {
+        "avg_pct": 2.61,
+        "pos_years": 19,
+        "total_years": 27
+      },
+      "5": {
+        "avg_pct": 0.72,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "6": {
+        "avg_pct": 2.65,
+        "pos_years": 16,
+        "total_years": 27
+      },
+      "7": {
+        "avg_pct": 0.82,
+        "pos_years": 15,
+        "total_years": 26
+      },
+      "8": {
+        "avg_pct": 1.01,
+        "pos_years": 15,
+        "total_years": 26
+      },
+      "9": {
+        "avg_pct": -1.76,
+        "pos_years": 13,
+        "total_years": 26
+      },
+      "10": {
+        "avg_pct": 5.11,
+        "pos_years": 17,
+        "total_years": 26
+      },
+      "11": {
+        "avg_pct": 1.88,
+        "pos_years": 17,
+        "total_years": 26
+      },
+      "12": {
+        "avg_pct": -0.62,
+        "pos_years": 14,
+        "total_years": 27
+      }
+    },
+    "best_month": {
+      "month": 10,
+      "avg_pct": 5.11,
+      "pos_years": 17,
+      "total_years": 26
+    },
+    "worst_month": {
+      "month": 2,
+      "avg_pct": -2.14,
+      "pos_years": 10,
+      "total_years": 27
+    }
+  },
+  "annual_returns": {
+    "1999": 0.0,
+    "2000": -62.85,
+    "2001": 52.74,
+    "2002": -21.96,
+    "2003": 6.82,
+    "2004": 9.13,
+    "2005": -0.94,
+    "2006": 15.84,
+    "2007": 20.84,
+    "2008": -44.39,
+    "2009": 60.47,
+    "2010": -6.52,
+    "2011": -4.52,
+    "2012": 5.8,
+    "2013": 44.3,
+    "2014": 27.56,
+    "2015": 22.69,
+    "2016": 15.08,
+    "2017": 40.73,
+    "2018": 20.8,
+    "2019": 57.56,
+    "2020": 42.53,
+    "2021": 52.48,
+    "2022": -28.02,
+    "2023": 58.19,
+    "2024": 12.93,
+    "2025": 15.58,
+    "2026": -23.42
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 94.14,
+    "worst_rolling_pct": -62.85,
+    "pct_negative": 26.82
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.695,
+      "beta": NaN,
+      "overlap_days": 6662
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.725,
+      "beta": 0.813,
+      "overlap_days": 6662
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.752,
+      "beta": 0.911,
+      "overlap_days": 6662
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 68.8,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 103.1,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 137.5,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 206.3,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 343.8,
+      "survives": false
+    },
+    "critical_leverage": 1.45
+  }
+}

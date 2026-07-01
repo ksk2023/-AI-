@@ -1,0 +1,178 @@
+{
+  "symbol": "000660_KS",
+  "display_name": "SK海力士",
+  "market": "韩国 KOSPI",
+  "sector": "半导体-存储DRAM/HBM",
+  "price_basis": "close (raw; Yahoo adj_close had 778 non-positive values, treated as unreliable)",
+  "data_source": "Yahoo Finance close (raw; Yahoo adj_close had 778 non-positive values, treated as unreliable)",
+  "period_start": "2000-01-04",
+  "period_end": "2026-07-01",
+  "trading_days": 6623,
+  "span_years": 26.49,
+  "trading_days_per_year": 250.0,
+  "start_price": 540750.0,
+  "end_price": 2557500.0,
+  "total_return_pct": 372.95,
+  "cagr_pct": 6.04,
+  "annualized_vol_pct": 59.79,
+  "sharpe": 0.068,
+  "sortino": 0.097,
+  "max_drawdown": {
+    "mdd_pct": -99.51,
+    "peak_date": "2000-01-28",
+    "trough_date": "2003-03-26",
+    "peak_idx": 18,
+    "trough_idx": 841,
+    "recovery_idx": 6461,
+    "recovery_date": "2025-11-03",
+    "recovery_days": 9411,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 3128,
+    "down_days": 3120,
+    "flat_days": 374,
+    "up_ratio_pct": 47.24,
+    "best_day_pct": 32.08,
+    "worst_day_pct": -15.74
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 9.73,
+        "pos_years": 17,
+        "total_years": 27
+      },
+      "2": {
+        "avg_pct": -2.84,
+        "pos_years": 12,
+        "total_years": 27
+      },
+      "3": {
+        "avg_pct": 2.72,
+        "pos_years": 13,
+        "total_years": 27
+      },
+      "4": {
+        "avg_pct": 2.22,
+        "pos_years": 16,
+        "total_years": 27
+      },
+      "5": {
+        "avg_pct": 5.39,
+        "pos_years": 14,
+        "total_years": 27
+      },
+      "6": {
+        "avg_pct": 2.88,
+        "pos_years": 17,
+        "total_years": 27
+      },
+      "7": {
+        "avg_pct": 1.18,
+        "pos_years": 11,
+        "total_years": 27
+      },
+      "8": {
+        "avg_pct": -1.57,
+        "pos_years": 10,
+        "total_years": 26
+      },
+      "9": {
+        "avg_pct": 0.66,
+        "pos_years": 15,
+        "total_years": 26
+      },
+      "10": {
+        "avg_pct": -0.46,
+        "pos_years": 13,
+        "total_years": 26
+      },
+      "11": {
+        "avg_pct": 3.54,
+        "pos_years": 16,
+        "total_years": 26
+      },
+      "12": {
+        "avg_pct": 3.29,
+        "pos_years": 16,
+        "total_years": 26
+      }
+    },
+    "best_month": {
+      "month": 1,
+      "avg_pct": 9.73,
+      "pos_years": 17,
+      "total_years": 27
+    },
+    "worst_month": {
+      "month": 2,
+      "avg_pct": -2.84,
+      "pos_years": 12,
+      "total_years": 27
+    }
+  },
+  "annual_returns": {
+    "2000": -84.37,
+    "2001": -39.88,
+    "2002": -88.43,
+    "2003": -4.76,
+    "2004": 108.04,
+    "2005": 203.0,
+    "2006": 3.4,
+    "2007": -28.9,
+    "2008": -74.18,
+    "2009": 245.52,
+    "2010": 3.67,
+    "2011": -8.54,
+    "2012": 17.31,
+    "2013": 42.91,
+    "2014": 29.76,
+    "2015": -35.6,
+    "2016": 45.37,
+    "2017": 71.14,
+    "2018": -20.92,
+    "2019": 55.54,
+    "2020": 25.93,
+    "2021": 10.55,
+    "2022": -42.75,
+    "2023": 88.67,
+    "2024": 22.9,
+    "2025": 274.35,
+    "2026": 292.86
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 1174.67,
+    "worst_rolling_pct": -95.77,
+    "pct_negative": 39.29
+  },
+  "correlation": {
+    "SPY": null,
+    "QQQ": null,
+    "NASDAQ_COMPOSITE": null
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 99.5,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 149.3,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 199.0,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 298.5,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 497.6,
+      "survives": false
+    },
+    "critical_leverage": 1.0
+  }
+}

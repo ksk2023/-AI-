@@ -1,0 +1,178 @@
+{
+  "symbol": "2330_TW",
+  "display_name": "台积电(台湾本股)",
+  "market": "台湾 TWSE",
+  "sector": "半导体-晶圆代工",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "2000-01-04",
+  "period_end": "2026-07-01",
+  "trading_days": 6586,
+  "span_years": 26.49,
+  "trading_days_per_year": 248.6,
+  "start_price": 33.3401,
+  "end_price": 2490.0,
+  "total_return_pct": 7368.48,
+  "cagr_pct": 17.68,
+  "annualized_vol_pct": 30.99,
+  "sharpe": 0.506,
+  "sortino": 0.781,
+  "max_drawdown": {
+    "mdd_pct": -67.96,
+    "peak_date": "2000-02-11",
+    "trough_date": "2002-10-08",
+    "peak_idx": 28,
+    "trough_idx": 720,
+    "recovery_idx": 2763,
+    "recovery_date": "2010-11-03",
+    "recovery_days": 3918,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 3061,
+    "down_days": 2911,
+    "flat_days": 613,
+    "up_ratio_pct": 46.48,
+    "best_day_pct": 14.37,
+    "worst_day_pct": -10.66
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 4.95,
+        "pos_years": 19,
+        "total_years": 27
+      },
+      "2": {
+        "avg_pct": 0.17,
+        "pos_years": 14,
+        "total_years": 27
+      },
+      "3": {
+        "avg_pct": 1.07,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "4": {
+        "avg_pct": 1.84,
+        "pos_years": 18,
+        "total_years": 27
+      },
+      "5": {
+        "avg_pct": 1.58,
+        "pos_years": 13,
+        "total_years": 27
+      },
+      "6": {
+        "avg_pct": 1.62,
+        "pos_years": 18,
+        "total_years": 27
+      },
+      "7": {
+        "avg_pct": 1.0,
+        "pos_years": 13,
+        "total_years": 27
+      },
+      "8": {
+        "avg_pct": 1.21,
+        "pos_years": 15,
+        "total_years": 26
+      },
+      "9": {
+        "avg_pct": -2.16,
+        "pos_years": 15,
+        "total_years": 26
+      },
+      "10": {
+        "avg_pct": 3.23,
+        "pos_years": 18,
+        "total_years": 26
+      },
+      "11": {
+        "avg_pct": 2.85,
+        "pos_years": 16,
+        "total_years": 26
+      },
+      "12": {
+        "avg_pct": 2.75,
+        "pos_years": 17,
+        "total_years": 26
+      }
+    },
+    "best_month": {
+      "month": 1,
+      "avg_pct": 4.95,
+      "pos_years": 19,
+      "total_years": 27
+    },
+    "worst_month": {
+      "month": 9,
+      "avg_pct": -2.16,
+      "pos_years": 15,
+      "total_years": 26
+    }
+  },
+  "annual_returns": {
+    "2000": -42.83,
+    "2001": 54.09,
+    "2002": -46.45,
+    "2003": 49.06,
+    "2004": -8.13,
+    "2005": 39.49,
+    "2006": 16.13,
+    "2007": -7.39,
+    "2008": -20.84,
+    "2009": 54.29,
+    "2010": 15.73,
+    "2011": 11.37,
+    "2012": 32.7,
+    "2013": 11.81,
+    "2014": 36.65,
+    "2015": 4.64,
+    "2016": 31.9,
+    "2017": 30.66,
+    "2018": 1.84,
+    "2019": 53.93,
+    "2020": 64.67,
+    "2021": 18.07,
+    "2022": -25.46,
+    "2023": 35.0,
+    "2024": 84.35,
+    "2025": 46.54,
+    "2026": 61.6
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 187.31,
+    "worst_rolling_pct": -52.33,
+    "pct_negative": 22.26
+  },
+  "correlation": {
+    "SPY": null,
+    "QQQ": null,
+    "NASDAQ_COMPOSITE": null
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 68.0,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 101.9,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 135.9,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 203.9,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 339.8,
+      "survives": false
+    },
+    "critical_leverage": 1.47
+  }
+}

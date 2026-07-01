@@ -1,0 +1,178 @@
+{
+  "symbol": "005930_KS",
+  "display_name": "三星电子",
+  "market": "韩国 KOSPI",
+  "sector": "半导体-存储+消费电子",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "2000-01-04",
+  "period_end": "2026-07-01",
+  "trading_days": 6623,
+  "span_years": 26.49,
+  "trading_days_per_year": 250.0,
+  "start_price": 4274.1724,
+  "end_price": 318000.0,
+  "total_return_pct": 7340.04,
+  "cagr_pct": 17.67,
+  "annualized_vol_pct": 35.53,
+  "sharpe": 0.441,
+  "sortino": 0.653,
+  "max_drawdown": {
+    "mdd_pct": -64.82,
+    "peak_date": "2000-07-13",
+    "trough_date": "2000-10-18",
+    "peak_idx": 137,
+    "trough_idx": 206,
+    "recovery_idx": 585,
+    "recovery_date": "2002-04-02",
+    "recovery_days": 628,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 3196,
+    "down_days": 3051,
+    "flat_days": 375,
+    "up_ratio_pct": 48.26,
+    "best_day_pct": 15.0,
+    "worst_day_pct": -14.92
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 4.74,
+        "pos_years": 16,
+        "total_years": 27
+      },
+      "2": {
+        "avg_pct": 0.51,
+        "pos_years": 11,
+        "total_years": 27
+      },
+      "3": {
+        "avg_pct": 3.91,
+        "pos_years": 17,
+        "total_years": 27
+      },
+      "4": {
+        "avg_pct": 2.46,
+        "pos_years": 17,
+        "total_years": 27
+      },
+      "5": {
+        "avg_pct": 0.02,
+        "pos_years": 13,
+        "total_years": 27
+      },
+      "6": {
+        "avg_pct": 0.35,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "7": {
+        "avg_pct": 2.25,
+        "pos_years": 16,
+        "total_years": 27
+      },
+      "8": {
+        "avg_pct": -2.22,
+        "pos_years": 8,
+        "total_years": 26
+      },
+      "9": {
+        "avg_pct": -0.28,
+        "pos_years": 14,
+        "total_years": 26
+      },
+      "10": {
+        "avg_pct": 2.49,
+        "pos_years": 12,
+        "total_years": 26
+      },
+      "11": {
+        "avg_pct": 3.61,
+        "pos_years": 16,
+        "total_years": 26
+      },
+      "12": {
+        "avg_pct": 4.18,
+        "pos_years": 15,
+        "total_years": 26
+      }
+    },
+    "best_month": {
+      "month": 1,
+      "avg_pct": 4.74,
+      "pos_years": 16,
+      "total_years": 27
+    },
+    "worst_month": {
+      "month": 8,
+      "avg_pct": -2.22,
+      "pos_years": 8,
+      "total_years": 26
+    }
+  },
+  "annual_returns": {
+    "2000": -48.28,
+    "2001": 76.58,
+    "2002": 12.54,
+    "2003": 43.63,
+    "2004": -0.11,
+    "2005": 46.06,
+    "2006": -5.98,
+    "2007": -8.02,
+    "2008": -17.92,
+    "2009": 79.02,
+    "2010": 20.16,
+    "2011": 12.08,
+    "2012": 44.66,
+    "2013": -8.93,
+    "2014": -1.83,
+    "2015": -3.45,
+    "2016": 45.34,
+    "2017": 43.96,
+    "2018": -21.63,
+    "2019": 48.46,
+    "2020": 51.84,
+    "2021": -1.57,
+    "2022": -27.63,
+    "2023": 44.92,
+    "2024": -30.77,
+    "2025": 130.24,
+    "2026": 165.77
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 557.45,
+    "worst_rolling_pct": -51.05,
+    "pct_negative": 35.72
+  },
+  "correlation": {
+    "SPY": null,
+    "QQQ": null,
+    "NASDAQ_COMPOSITE": null
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 64.8,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 97.2,
+      "survives": true
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 129.6,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 194.5,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 324.1,
+      "survives": false
+    },
+    "critical_leverage": 1.54
+  }
+}

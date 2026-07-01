@@ -1,0 +1,183 @@
+{
+  "symbol": "TSLA",
+  "display_name": "特斯拉",
+  "market": "US 纳斯达克",
+  "sector": "汽车/能源/科技",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "2010-06-29",
+  "period_end": "2026-06-29",
+  "trading_days": 4024,
+  "span_years": 16.0,
+  "trading_days_per_year": 251.5,
+  "start_price": 1.5927,
+  "end_price": 412.5501,
+  "total_return_pct": 25803.1,
+  "cagr_pct": 41.53,
+  "annualized_vol_pct": 57.31,
+  "sharpe": 0.69,
+  "sortino": 1.029,
+  "max_drawdown": {
+    "mdd_pct": -73.63,
+    "peak_date": "2021-11-04",
+    "trough_date": "2023-01-03",
+    "peak_idx": 2859,
+    "trough_idx": 3150,
+    "recovery_idx": 3638,
+    "recovery_date": "2024-12-11",
+    "recovery_days": 1133,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 2077,
+    "down_days": 1936,
+    "flat_days": 10,
+    "up_ratio_pct": 51.63,
+    "best_day_pct": 24.4,
+    "worst_day_pct": -21.06
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 5.45,
+        "pos_years": 9,
+        "total_years": 16
+      },
+      "2": {
+        "avg_pct": 0.97,
+        "pos_years": 7,
+        "total_years": 16
+      },
+      "3": {
+        "avg_pct": -1.23,
+        "pos_years": 7,
+        "total_years": 16
+      },
+      "4": {
+        "avg_pct": 5.94,
+        "pos_years": 10,
+        "total_years": 16
+      },
+      "5": {
+        "avg_pct": 6.64,
+        "pos_years": 8,
+        "total_years": 16
+      },
+      "6": {
+        "avg_pct": 7.63,
+        "pos_years": 11,
+        "total_years": 17
+      },
+      "7": {
+        "avg_pct": 3.93,
+        "pos_years": 8,
+        "total_years": 16
+      },
+      "8": {
+        "avg_pct": 5.98,
+        "pos_years": 8,
+        "total_years": 16
+      },
+      "9": {
+        "avg_pct": 2.3,
+        "pos_years": 7,
+        "total_years": 16
+      },
+      "10": {
+        "avg_pct": 2.48,
+        "pos_years": 6,
+        "total_years": 16
+      },
+      "11": {
+        "avg_pct": 10.6,
+        "pos_years": 11,
+        "total_years": 16
+      },
+      "12": {
+        "avg_pct": 1.03,
+        "pos_years": 10,
+        "total_years": 16
+      }
+    },
+    "best_month": {
+      "month": 11,
+      "avg_pct": 10.6,
+      "pos_years": 11,
+      "total_years": 16
+    },
+    "worst_month": {
+      "month": 3,
+      "avg_pct": -1.23,
+      "pos_years": 7,
+      "total_years": 16
+    }
+  },
+  "annual_returns": {
+    "2010": 11.47,
+    "2011": 7.25,
+    "2012": 18.59,
+    "2013": 344.14,
+    "2014": 47.85,
+    "2015": 7.91,
+    "2016": -10.97,
+    "2017": 45.7,
+    "2018": 6.89,
+    "2019": 25.7,
+    "2020": 743.44,
+    "2021": 49.76,
+    "2022": -65.03,
+    "2023": 101.72,
+    "2024": 62.52,
+    "2025": 11.36,
+    "2026": -8.27
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 1004.38,
+    "worst_rolling_pct": -71.58,
+    "pct_negative": 28.9
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.455,
+      "beta": 1.531,
+      "overlap_days": 4024
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.518,
+      "beta": 1.439,
+      "overlap_days": 4024
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.526,
+      "beta": 1.475,
+      "overlap_days": 4024
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 73.6,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 110.4,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 147.3,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 220.9,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 368.1,
+      "survives": false
+    },
+    "critical_leverage": 1.36
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "symbol": "GOOGL",
+  "display_name": "谷歌(Alphabet A)",
+  "market": "US 纳斯达克",
+  "sector": "科技-互联网/广告",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "2004-08-19",
+  "period_end": "2026-06-29",
+  "trading_days": 5499,
+  "span_years": 21.86,
+  "trading_days_per_year": 251.6,
+  "start_price": 2.4889,
+  "end_price": 352.77,
+  "total_return_pct": 14073.5,
+  "cagr_pct": 25.44,
+  "annualized_vol_pct": 30.66,
+  "sharpe": 0.764,
+  "sortino": 1.103,
+  "max_drawdown": {
+    "mdd_pct": -65.29,
+    "peak_date": "2007-11-06",
+    "trough_date": "2008-11-24",
+    "peak_idx": 810,
+    "trough_idx": 1075,
+    "recovery_idx": 2040,
+    "recovery_date": "2012-09-24",
+    "recovery_days": 1783,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 2892,
+    "down_days": 2602,
+    "flat_days": 4,
+    "up_ratio_pct": 52.6,
+    "best_day_pct": 19.99,
+    "worst_day_pct": -11.63
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 2.28,
+        "pos_years": 17,
+        "total_years": 22
+      },
+      "2": {
+        "avg_pct": -2.96,
+        "pos_years": 8,
+        "total_years": 22
+      },
+      "3": {
+        "avg_pct": 0.12,
+        "pos_years": 12,
+        "total_years": 22
+      },
+      "4": {
+        "avg_pct": 5.29,
+        "pos_years": 14,
+        "total_years": 22
+      },
+      "5": {
+        "avg_pct": 3.28,
+        "pos_years": 14,
+        "total_years": 22
+      },
+      "6": {
+        "avg_pct": -0.46,
+        "pos_years": 10,
+        "total_years": 22
+      },
+      "7": {
+        "avg_pct": 5.38,
+        "pos_years": 15,
+        "total_years": 21
+      },
+      "8": {
+        "avg_pct": 0.23,
+        "pos_years": 11,
+        "total_years": 22
+      },
+      "9": {
+        "avg_pct": 2.71,
+        "pos_years": 14,
+        "total_years": 22
+      },
+      "10": {
+        "avg_pct": 8.69,
+        "pos_years": 16,
+        "total_years": 22
+      },
+      "11": {
+        "avg_pct": 1.08,
+        "pos_years": 14,
+        "total_years": 22
+      },
+      "12": {
+        "avg_pct": 1.83,
+        "pos_years": 15,
+        "total_years": 22
+      }
+    },
+    "best_month": {
+      "month": 10,
+      "avg_pct": 8.69,
+      "pos_years": 16,
+      "total_years": 22
+    },
+    "worst_month": {
+      "month": 2,
+      "avg_pct": -2.96,
+      "pos_years": 8,
+      "total_years": 22
+    }
+  },
+  "annual_returns": {
+    "2004": 92.14,
+    "2005": 115.19,
+    "2006": 11.0,
+    "2007": 50.17,
+    "2008": -55.51,
+    "2009": 101.52,
+    "2010": -4.2,
+    "2011": 8.74,
+    "2012": 9.52,
+    "2013": 58.43,
+    "2014": -5.39,
+    "2015": 46.61,
+    "2016": 1.86,
+    "2017": 32.93,
+    "2018": -0.8,
+    "2019": 28.18,
+    "2020": 30.85,
+    "2021": 65.3,
+    "2022": -39.09,
+    "2023": 58.32,
+    "2024": 36.01,
+    "2025": 65.99,
+    "2026": 12.85
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 188.72,
+    "worst_rolling_pct": -61.62,
+    "pct_negative": 18.98
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.627,
+      "beta": 1.021,
+      "overlap_days": 5499
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.701,
+      "beta": 0.999,
+      "overlap_days": 5499
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.688,
+      "beta": 0.98,
+      "overlap_days": 5499
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 65.3,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 97.9,
+      "survives": true
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 130.6,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 195.9,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 326.4,
+      "survives": false
+    },
+    "critical_leverage": 1.53
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "symbol": "META",
+  "display_name": "Meta",
+  "market": "US 纳斯达克",
+  "sector": "科技-社交/广告",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "2012-05-18",
+  "period_end": "2026-06-29",
+  "trading_days": 3547,
+  "span_years": 14.11,
+  "trading_days_per_year": 251.3,
+  "start_price": 37.8972,
+  "end_price": 565.235,
+  "total_return_pct": 1391.5,
+  "cagr_pct": 21.1,
+  "annualized_vol_pct": 39.68,
+  "sharpe": 0.481,
+  "sortino": 0.652,
+  "max_drawdown": {
+    "mdd_pct": -76.74,
+    "peak_date": "2021-09-07",
+    "trough_date": "2022-11-03",
+    "peak_idx": 2340,
+    "trough_idx": 2633,
+    "recovery_idx": 2935,
+    "recovery_date": "2024-01-19",
+    "recovery_days": 864,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 1851,
+    "down_days": 1683,
+    "flat_days": 12,
+    "up_ratio_pct": 52.2,
+    "best_day_pct": 29.61,
+    "worst_day_pct": -26.39
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 9.15,
+        "pos_years": 10,
+        "total_years": 14
+      },
+      "2": {
+        "avg_pct": -1.0,
+        "pos_years": 5,
+        "total_years": 14
+      },
+      "3": {
+        "avg_pct": -0.6,
+        "pos_years": 7,
+        "total_years": 14
+      },
+      "4": {
+        "avg_pct": 4.54,
+        "pos_years": 9,
+        "total_years": 14
+      },
+      "5": {
+        "avg_pct": 1.62,
+        "pos_years": 11,
+        "total_years": 15
+      },
+      "6": {
+        "avg_pct": 2.52,
+        "pos_years": 11,
+        "total_years": 15
+      },
+      "7": {
+        "avg_pct": 4.87,
+        "pos_years": 10,
+        "total_years": 14
+      },
+      "8": {
+        "avg_pct": 1.21,
+        "pos_years": 9,
+        "total_years": 14
+      },
+      "9": {
+        "avg_pct": 0.8,
+        "pos_years": 7,
+        "total_years": 14
+      },
+      "10": {
+        "avg_pct": -2.47,
+        "pos_years": 6,
+        "total_years": 14
+      },
+      "11": {
+        "avg_pct": 4.34,
+        "pos_years": 9,
+        "total_years": 14
+      },
+      "12": {
+        "avg_pct": 1.45,
+        "pos_years": 9,
+        "total_years": 14
+      }
+    },
+    "best_month": {
+      "month": 1,
+      "avg_pct": 9.15,
+      "pos_years": 10,
+      "total_years": 14
+    },
+    "worst_month": {
+      "month": 10,
+      "avg_pct": -2.47,
+      "pos_years": 6,
+      "total_years": 14
+    }
+  },
+  "annual_returns": {
+    "2012": -30.37,
+    "2013": 105.3,
+    "2014": 42.76,
+    "2015": 34.15,
+    "2016": 9.93,
+    "2017": 53.38,
+    "2018": -25.71,
+    "2019": 56.57,
+    "2020": 33.09,
+    "2021": 23.13,
+    "2022": -64.22,
+    "2023": 194.13,
+    "2024": 66.05,
+    "2025": 13.09,
+    "2026": -14.22
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 255.19,
+    "worst_rolling_pct": -73.19,
+    "pct_negative": 18.79
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.535,
+      "beta": 1.273,
+      "overlap_days": 3547
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.615,
+      "beta": 1.181,
+      "overlap_days": 3547
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.611,
+      "beta": 1.193,
+      "overlap_days": 3547
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 76.7,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 115.1,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 153.5,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 230.2,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 383.7,
+      "survives": false
+    },
+    "critical_leverage": 1.3
+  }
+}

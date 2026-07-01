@@ -1,0 +1,195 @@
+{
+  "symbol": "MU",
+  "display_name": "美光(Micron)",
+  "market": "US 纳斯达克",
+  "sector": "半导体-存储DRAM/NAND",
+  "price_basis": "adj_close (split+dividend adjusted)",
+  "data_source": "Yahoo Finance adj_close (split+dividend adjusted)",
+  "period_start": "1998-12-31",
+  "period_end": "2026-06-30",
+  "trading_days": 6915,
+  "span_years": 27.49,
+  "trading_days_per_year": 251.5,
+  "start_price": 24.6565,
+  "end_price": 1154.29,
+  "total_return_pct": 4581.49,
+  "cagr_pct": 15.02,
+  "annualized_vol_pct": 57.37,
+  "sharpe": 0.227,
+  "sortino": 0.339,
+  "max_drawdown": {
+    "mdd_pct": -98.25,
+    "peak_date": "2000-07-14",
+    "trough_date": "2008-11-20",
+    "peak_idx": 387,
+    "trough_idx": 2488,
+    "recovery_idx": 5790,
+    "recovery_date": "2022-01-04",
+    "recovery_days": 7844,
+    "recovered": true
+  },
+  "win_loss": {
+    "up_days": 3461,
+    "down_days": 3382,
+    "flat_days": 71,
+    "up_ratio_pct": 50.06,
+    "best_day_pct": 23.44,
+    "worst_day_pct": -23.04
+  },
+  "monthly_seasonality": {
+    "by_month": {
+      "1": {
+        "avg_pct": 8.02,
+        "pos_years": 18,
+        "total_years": 28
+      },
+      "2": {
+        "avg_pct": 2.61,
+        "pos_years": 16,
+        "total_years": 28
+      },
+      "3": {
+        "avg_pct": 2.31,
+        "pos_years": 15,
+        "total_years": 28
+      },
+      "4": {
+        "avg_pct": 0.69,
+        "pos_years": 13,
+        "total_years": 28
+      },
+      "5": {
+        "avg_pct": 8.11,
+        "pos_years": 19,
+        "total_years": 28
+      },
+      "6": {
+        "avg_pct": 0.73,
+        "pos_years": 17,
+        "total_years": 28
+      },
+      "7": {
+        "avg_pct": 1.51,
+        "pos_years": 10,
+        "total_years": 27
+      },
+      "8": {
+        "avg_pct": -1.25,
+        "pos_years": 12,
+        "total_years": 27
+      },
+      "9": {
+        "avg_pct": -2.04,
+        "pos_years": 12,
+        "total_years": 27
+      },
+      "10": {
+        "avg_pct": 3.15,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "11": {
+        "avg_pct": 2.13,
+        "pos_years": 15,
+        "total_years": 27
+      },
+      "12": {
+        "avg_pct": 2.95,
+        "pos_years": 16,
+        "total_years": 28
+      }
+    },
+    "best_month": {
+      "month": 5,
+      "avg_pct": 8.11,
+      "pos_years": 19,
+      "total_years": 28
+    },
+    "worst_month": {
+      "month": 9,
+      "avg_pct": -2.04,
+      "pos_years": 12,
+      "total_years": 27
+    }
+  },
+  "annual_returns": {
+    "1998": 0.0,
+    "1999": 54.51,
+    "2000": -9.12,
+    "2001": -12.68,
+    "2002": -68.58,
+    "2003": 38.3,
+    "2004": -8.31,
+    "2005": 7.77,
+    "2006": 4.88,
+    "2007": -48.07,
+    "2008": -63.59,
+    "2009": 300.0,
+    "2010": -24.05,
+    "2011": -21.57,
+    "2012": 0.79,
+    "2013": 243.06,
+    "2014": 60.97,
+    "2015": -59.55,
+    "2016": 54.8,
+    "2017": 87.59,
+    "2018": -22.84,
+    "2019": 69.49,
+    "2020": 39.79,
+    "2021": 24.21,
+    "2022": -45.93,
+    "2023": 71.93,
+    "2024": -0.96,
+    "2025": 240.24,
+    "2026": 304.6
+  },
+  "rolling_252d": {
+    "window_days": 252,
+    "best_rolling_pct": 1029.21,
+    "worst_rolling_pct": -82.67,
+    "pct_negative": 46.63
+  },
+  "correlation": {
+    "SPY": {
+      "symbol": "SPY",
+      "corr": 0.564,
+      "beta": NaN,
+      "overlap_days": 6662
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "corr": 0.583,
+      "beta": NaN,
+      "overlap_days": 6868
+    },
+    "NASDAQ_COMPOSITE": {
+      "symbol": "NASDAQ_COMPOSITE",
+      "corr": 0.602,
+      "beta": 1.387,
+      "overlap_days": 6914
+    }
+  },
+  "leverage_sensitivity": {
+    "1.0": {
+      "loss_at_worst_mdd_pct": 98.2,
+      "survives": true
+    },
+    "1.5": {
+      "loss_at_worst_mdd_pct": 147.4,
+      "survives": false
+    },
+    "2.0": {
+      "loss_at_worst_mdd_pct": 196.5,
+      "survives": false
+    },
+    "3.0": {
+      "loss_at_worst_mdd_pct": 294.8,
+      "survives": false
+    },
+    "5.0": {
+      "loss_at_worst_mdd_pct": 491.3,
+      "survives": false
+    },
+    "critical_leverage": 1.02
+  }
+}
